@@ -7,17 +7,17 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['var(--font-inter)', 'sans-serif'],
+      sans: ['inter', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
         'hero-image': "url('/images/hero-bg.png')",
       },
       fontFamily: {
-        mono: ['var(--font-plex-mono)', 'monospace'],
+        mono: ['IBM Plex Mono', 'monospace'],
       },
       boxShadow: {
-        button: '0px 0px 68px 7px rgba(5, 150, 105, 0.4)',
+        button: '0px 0px 68px 7px rgba(200, 200, 0, 0.2)',
       },
     },
   },
