@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { TechBadge } from "../../tech-badge"
-import { Button } from "../../button"
+import { TechBadge } from "../../../tech-badge"
+import { Button } from "../../../button"
 import { HiArrowNarrowRight } from "react-icons/hi"
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp  } from "react-icons/tb"
 
@@ -30,8 +30,8 @@ export const HeroSection = () => {
                     <p className="text-gray-400 my-6 text-sm sm:text-base">Sou um desenvolvedor full stack apaixonado por tecnologia. Com mais de 1 ano de experiência. Meu objetivo é continuar aprendendo e crescendo profissionalmente na área de Engenharia de Software e Desenvolvimento de Sistemas. Estou aberto a novas oportunidades e desafios.</p>
 
                     <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w[340px]">
-                        {Array.from({ length: 7}).map((_, index) => (
-                            <TechBadge name="C#" />
+                        {['C#', '.NET', 'React', 'Next.js', 'Tailwind', 'PostgreSQL'].map((techName, index) => (
+                            <TechBadge key={index} name={techName} />
                         ))}
                     </div>
 
